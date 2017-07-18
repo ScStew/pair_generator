@@ -11,4 +11,8 @@ class Pair_generator_test < Minitest::Test
 		assert_equal(3, random_pair(string))
 	end
 
+	def test_3_pair_odd_number_of_names
+	string = ["abe","wash","george","jack","jill","hill","ted"]
+		assert_equal(3, random_pair(string))
+	end
 end
