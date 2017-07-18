@@ -1,3 +1,15 @@
+def not_enough(string)
+	if string.length <= 3
+		p "not enough names"
+	else
+		random_pair(string)
+	end
+end
+
+
+
+
+
 def random_pair(string)
 
 	array = string.shuffle.each_slice(2).to_a
@@ -10,11 +22,6 @@ def random_pair(string)
   	array.slice!(array.length - 1)
   	p array
   	array.length
-
-
-  	
-
-  	end	
-
+	end	
 
 end

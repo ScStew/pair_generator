@@ -15,4 +15,14 @@ class Pair_generator_test < Minitest::Test
 	string = ["abe","wash","george","jack","jill","hill","ted"]
 		assert_equal(3, random_pair(string))
 	end
+
+	def test_not_enough_names_2
+		string = ["abe","ted"]
+		assert_equal("not enough names",not_enough(string))
+	end
+
+	def test_not_enough_names_3
+		string = ["abe","ted","jack"]
+		assert_equal("not enough names",not_enough(string))
+	end
 end
